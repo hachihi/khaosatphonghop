@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply antialiased text-slate-800 bg-slate-100;
+  }
+}
+
+@media print {
+  @page {
+    margin: 12mm 15mm;
+    size: A4 portrait;
+  }
+
+  body {
+    background-color: white !important;
+    color: black !important;
+    font-size: 11pt;
+  }
+
+  /* Hide everything except print view */
+  header,
+  footer,
+  .print\:hidden {
+    display: none !important;
+  }
+
+  /* Prevent awkward page break inside tables or signature blocks */
+  table, tr, td, th {
+    page-break-inside: avoid;
+  }
+
+  .page-break-after {
+    page-break-after: always;
+  }
+}

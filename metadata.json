@@ -1,0 +1,6 @@
+{
+  "name": "Khảo Sát Lắp Đặt Phòng Họp",
+  "description": "Biểu mẫu và danh sách câu hỏi chuẩn khảo sát hiện trạng kỹ thuật lắp đặt phòng họp và hội nghị truyền hình.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
